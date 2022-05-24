@@ -1,0 +1,1 @@
+cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -Eo  "i-.{17}" | sort | uniq > result.txt

@@ -1,1 +1,0 @@
-sed -i  "s/ec2-private_ip/$(grep -i "PrivateIpAddress" info.json | head -1 | cut -d'"' -f4)/" terraform.tf
